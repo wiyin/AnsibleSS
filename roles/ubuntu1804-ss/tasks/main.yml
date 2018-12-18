@@ -18,10 +18,6 @@
   apt:
     autoremove: yes
 
-- name: "Add shadowsocks-libev ppa"
-  apt_repository:
-    repo: 'ppa:max-c-lv/shadowsocks-libev'
-
 - name: "Install shadowsocks-libev latest version"
   apt:
     name: shadowsocks-libev
