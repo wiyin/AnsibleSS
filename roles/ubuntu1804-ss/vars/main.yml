@@ -1,0 +1,5 @@
+---
+ss_password: LyGy3PsY7Vbm
+ss_port: 443
+ss_method: chacha20-ietf-poly1305
+sshd_port: 22
