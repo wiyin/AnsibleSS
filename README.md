@@ -31,8 +31,9 @@ initialization
 dpkg --configure -a
 apt update
 apt upgrade -y 
+apt install software-properties-common -y
 add-apt-repository ppa:ansible/ansible
-apt-get update
+apt update
 apt install ansible git -y
 ```
 
