@@ -9,4 +9,4 @@
     state: restarted
 
 - name: apply-sysctl
-  shell: sysctl -e -p
+  shell: sysctl -p /etc/sysctl.d/60-shadowsocks.conf
