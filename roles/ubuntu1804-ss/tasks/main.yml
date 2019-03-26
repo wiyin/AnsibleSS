@@ -6,6 +6,11 @@
   - vim
   - curl
   - rsyslog
+  
+- name: "Ensure basic packages are there v2"
+  apt:
+    pkg: ['git', 'wget', 'vim', 'curl', 'rsyslog']
+    state: present
 
 - name: Update all packages to the latest version
   apt:
