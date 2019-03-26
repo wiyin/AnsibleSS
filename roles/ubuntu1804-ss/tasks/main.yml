@@ -1,11 +1,11 @@
-- name: "Ensure basic packages are there"
-  apt: pkg={{ item }} state=present
-  with_items:
-  - git
-  - wget
-  - vim
-  - curl
-  - rsyslog
+#- name: "Ensure basic packages are there"
+#  apt: pkg={{ item }} state=present
+#  with_items:
+#  - git
+#  - wget
+#  - vim
+#  - curl
+#  - rsyslog
   
 - name: "Ensure basic packages are there v2"
   apt:
