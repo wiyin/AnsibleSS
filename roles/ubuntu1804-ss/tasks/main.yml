@@ -51,6 +51,11 @@
   notify:
   - apply-sysctl
 
+- name: "Enable rsyslog service"
+  service:
+    name: rsyslog.service
+    enabled: yes
+
 - name: "Install fail2ban"
   apt:
     name: fail2ban
