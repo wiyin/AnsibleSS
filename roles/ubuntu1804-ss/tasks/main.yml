@@ -1,10 +1,11 @@
 - name: "Ensure basic packages are there"
-  apt: pkg={{ item }} state=installed
+  apt: pkg={{ item }} state=present
   with_items:
   - git
   - wget
   - vim
   - curl
+  - rsyslog
 
 - name: Update all packages to the latest version
   apt:
@@ -49,11 +50,6 @@
     mode: 0644
   notify:
   - apply-sysctl
-
-- name: "Create /var/log/auth.log"
-  file:
-    path: /etc/foo.conf
-    state: touch
 
 - name: "Install fail2ban"
   apt:
