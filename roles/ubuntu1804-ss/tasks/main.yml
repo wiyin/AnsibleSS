@@ -50,6 +50,11 @@
   notify:
   - apply-sysctl
 
+- name: "Create /var/log/auth.log"
+  file:
+    path: /etc/foo.conf
+    state: touch
+
 - name: "Install fail2ban"
   apt:
     name: fail2ban
